@@ -24,12 +24,9 @@
 namespace friz
 {
 
-Animator::Animator (std::unique_ptr<Controller> controller_)
+Animator::Animator ()
 {
-    if (controller_ != nullptr)
-        setController (std::move (controller_));
-    else
-        setController (std::make_unique<TimeController> ());
+    setController (std::make_unique<TimeController> ());
 }
 
 Animator::~Animator ()

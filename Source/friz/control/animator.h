@@ -54,7 +54,7 @@ public:
      *
      * @param controller
      */
-    Animator (std::unique_ptr<Controller> controller_ = nullptr);
+    Animator ();
 
     ~Animator ();
 
